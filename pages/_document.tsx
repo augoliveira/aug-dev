@@ -9,10 +9,10 @@ class MyDocument extends Document {
         <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <title>
-                Desenvolvedor web meu job
+                Desenvolvimento de solução web para seu negócio.
                 </title>
                 <meta name="description" content="desenvolvimento de sites e app."/>
-                <meta name="keywords" content=" Desenvolvemos aolução web para seu negócio."/>
+                <meta name="keywords" content=" Desenvolvemos soluções web para seu negócio."/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"

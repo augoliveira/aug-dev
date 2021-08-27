@@ -30,8 +30,8 @@ const Sidebar = () => {
       </p>
       {/* Sobre mim */}
       <a
-        href="/assets/Sumit Dey Resume.pdf"
-        download="Sumit Dey Resume.pdf"
+        href="/assets/augusto.pdf"
+        download="augusto.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <GiTie className="w-6 h-6" />
@@ -40,10 +40,10 @@ const Sidebar = () => {
 
       {/* Socials */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
-        <a href="https://www.youtube.com/channel/UClW8d1f5m0QAE_Ig024EP6A" aria-label= "Youtube">
+        <a href="https://www.youtube.com/channel/UCWipoUgjbddah2ZC_Fsqn8A" aria-label= "Youtube">
           <AiFillYoutube className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/sumit-dey-4a04431a9/" aria-label= "Linkedin">
+        <a href="https://www.linkedin.com/in/augusto-araujo-7a309763/" aria-label= "Linkedin">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="https://www.instagram.com/aug_oliv" aria-label= "Instagram">
@@ -57,9 +57,9 @@ const Sidebar = () => {
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center">
-          <GoLocation className="mr-2" /> <span>Brasili - DF </span>
+          <GoLocation className="mr-2" /> <span>Brasilia - DF </span>
         </div>
-        <p className="my-2 "> code.augx@gmail.com </p>
+        <p className="my-2 "> aug_oliv@hotmail.com </p>
         <p className="my-2"> (61) 98669-2775 / 984408746 </p>
       </div>
 
@@ -67,7 +67,7 @@ const Sidebar = () => {
 
       <button
         className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none"
-        onClick={() => window.open("mailto:code.sumax@gmail.com")}
+        onClick={() => window.open("mailto:aug_oliv@hotmail.com")}
       >
         Enviar um E-mail
       </button>
