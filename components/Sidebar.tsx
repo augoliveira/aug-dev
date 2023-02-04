@@ -3,6 +3,8 @@ import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Perfil from '../public/images/perfil.jpg'
+import Link from "next/link";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -14,12 +16,9 @@ const Sidebar = () => {
   return (
     <>
       <Image
-        src="/images/perfil.jpg"
+        src={Perfil}
         alt="avatar"
         className=" mx-auto border rounded-full "
-        height="128px"
-        width="128px"
-        layout="intrinsic"
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
@@ -29,26 +28,26 @@ const Sidebar = () => {
         Desenvolvedor Web
       </p>
       {/* Sobre mim */}
-      <a
+      <Link
         href="/assets/augusto.pdf"
         download="augusto.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <GiTie className="w-6 h-6" />
         <span>Baixar curriculo</span>
-      </a>
+      </Link>
 
       {/* Socials */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
-        <a href="https://www.youtube.com/channel/UCWipoUgjbddah2ZC_Fsqn8A" aria-label= "Youtube">
+        <Link href="https://www.youtube.com/channel/UCWipoUgjbddah2ZC_Fsqn8A" aria-label= "Youtube">
           <AiFillYoutube className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="https://www.linkedin.com/in/augusto-araujo-7a309763/" aria-label= "Linkedin">
+        </Link>
+        <Link href="https://www.linkedin.com/in/augusto-araujo-7a309763/" aria-label= "Linkedin">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="https://www.instagram.com/aug_oliv" aria-label= "Instagram">
+        </Link>
+        <Link href="https://www.instagram.com/aug_oliv" aria-label= "Instagram">
           <AiFillInstagram className="w-8 h-8 cursor-pointer" />{" "}
-        </a>
+        </Link>
       </div>
 
       {/* Contacts */}

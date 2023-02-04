@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 import {fadeInUp} from '../animations'
 import {stagger} from '../animations'
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -29,9 +30,13 @@ const ProjectCard: FunctionComponent<{
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
-        layout="responsive"
-        height="150"
-        width="300"
+        width={150}
+      height={300}
+      sizes="100vw"
+      style={{
+        width: '100%',
+        height: 'auto',
+      }}
       />
       {/* <img
         src={image_path}
@@ -49,24 +54,28 @@ const ProjectCard: FunctionComponent<{
             <Image
               src={image_path}
               alt={name}
-              layout="responsive"
-              height="150"
-              width="300"
+              width={150}
+      height={300}
+      sizes="100vw"
+      style={{
+        width: '100%',
+        height: 'auto',
+      }}
             />
             </motion.div>
             <motion.div className="flex justify-center my-4 space-x-3"variants={fadeInUp}>
-              <a
+              <Link
                 href={github_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href={deployed_url}
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillProject /> <span>Project</span>
-              </a>
+              </Link>
             </motion.div>
           </div>
 

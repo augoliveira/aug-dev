@@ -7,8 +7,18 @@ import {routerAnimation} from '../animations'
 
 import { ThemeProvider } from "next-themes";
 import router from "next/router";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps,router }) {
+  const [showChild, setShowChild] = useState(false)
+
+  useEffect(() => {
+    setShowChild(true)
+  }, [])
+
+  if (!showChild) {
+    return null
+  }
   return (
     <ThemeProvider attribute="class">
       <div className="grid grid-cols-12 gap-6 px-5 my-14 lg:mb-0 md:mb-16 sm:px-20 md:px-32 lg:px-36 xl:px-48 ">
