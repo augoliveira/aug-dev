@@ -1,5 +1,7 @@
 {
-    "cSpell.words": [
-        "semibold"
-    ]
+  "cSpell.words": [
+    "semibold"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
